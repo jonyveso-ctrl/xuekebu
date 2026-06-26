@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学术科技部</title>
+    <link rel="stylesheet" href="css/linear-style.css">
+    <style>
+        body, html {
+            font-family: '楷体', '楷体_GB2312', 'KaiTi', 'STKaiti', 'Noto Serif SC', serif !important;
+        }
+        button, .cta-button, a.button {
+            font-family: inherit;
+            background: #1976d2;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 20px;
+            margin: 4px 0;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover, .cta-button:hover, a.button:hover {
+            background: #1565c0;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="snake-bg-canvas"></canvas>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1><a href="index.html">学术科技部</a></h1>
+                <p>记录我们的欢笑与成长</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首阙</a></li>
+                    <li><a href="timeline.html">岁笺</a></li>
+                    <li><a href="gallery.html">画棠集</a></li>
+                    <li><a href="our-people.html">同袍录</a></li>
+                    <li><a href="resources.html">藏珠阁</a></li>
+                    <li><a href="about.html">素履志</a></li>
+                    <li><a href="message-board.html">鸿笺驿</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-label="切换主题">浅色模式</button>
+        </header>
+
+        <main>
+            <section class="content-area">
+                <div class="page-header">
+                    <h1 class="page-title"></h1>
+                    <p class="page-subtitle">一段穿越我们最重要时刻和成就的旅程。</p>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-event">
+                        <div class="timeline-date">自盘古开天辟地以来……</div>
+                        <h4>部门成立</h4>
+                        <p></p>
+                    </div>
+                    <div class="timeline-event">
+                        <div class="timeline-date">历经多届优秀的学长学姐的建设</div>
+                        <h4>学术科技部欣欣向荣</h4>
+                        <p>形成温馨和谐互助的部门氛围</p>
+                    </div>
+                    <div class="timeline-event">
+                        <div class="timeline-date">2024年</div>
+                        <h4>由15名成员汇聚在学科大家庭</h4>
+                        <p>一年前也是新兵蛋子</p>
+                    </div>
+                    <div class="timeline-event">
+                        <div class="timeline-date">2025年</div>
+                        <h4>部门纳新</h4>
+                        <p>期待学弟学妹们加入学科这个温馨的大家庭！！！</p>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="sidebar">
+                <section class="widget">
+                    <h4>筛选时间线</h4>
+                    <p><em>（来自未来）</em></p>
+                    <ul>
+                        <li><a href="#era-founding">one</a></li>
+                        <li><a href="#era-expansion">two</a></li>
+                        <li><a href="#era-modern">three</a></li>
+                    </ul>
+                </section>
+            </aside>
+        </main>
+
+        <footer>
+            <p>© <span id="current-year"></span> 我们的部门. 共同记录，分享美好。</p>
+            <p>每一份回忆都由团队成员共同守护与珍藏。</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/snake-background.js"></script>
+</body>
+</html>

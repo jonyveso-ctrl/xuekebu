@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画棠集 - 学术科技部</title>
+    <link rel="stylesheet" href="css/linear-style.css">
+    <style>
+        body, html {
+            font-family: '楷体', '楷体_GB2312', 'KaiTi', 'STKaiti', 'Noto Serif SC', serif !important;
+        }
+        button, .cta-button, a.button {
+            font-family: inherit;
+            background: #1976d2;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 20px;
+            margin: 4px 0;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover, .cta-button:hover, a.button:hover {
+            background: #1565c0;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            border-radius: 4px;
+        }
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 16px;
+        }
+        .loading, .empty, .error {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+        }
+        .error { color: #e57373; }
+        .admin-link {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #1976d2;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+        .admin-link:hover {
+            background: #1565c0;
+        }
+        .section-title {
+            font-size: 1.2rem;
+            margin: 30px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #333;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="snake-bg-canvas"></canvas>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1><a href="index.html">学术科技部</a></h1>
+                <p>记录我们的欢笑与成长</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首阙</a></li>
+                    <li><a href="timeline.html">岁笺</a></li>
+                    <li><a href="gallery.html">画棠集</a></li>
+                    <li><a href="our-people.html">同袍录</a></li>
+                    <li><a href="resources.html">藏珠阁</a></li>
+                    <li><a href="about.html">素履志</a></li>
+                    <li><a href="message-board.html">鸿笺驿</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-label="切换主题">浅色模式</button>
+        </header>
+
+        <main>
+            <section class="content-area">
+                <div class="page-header">
+                    <h1 class="page-title">画棠集</h1>
+                    <p class="page-subtitle">每一张照片都承载着我们并肩同行的故事与欢笑。（期待看到学弟学妹们认真工作时的靓照+表情包❥(^_-)）</p>
+                </div>
+
+                <div class="gallery-filters">
+                    <button class="active" data-filter="all">全部</button>
+                    <button data-filter="events">整点抽象的</button>
+                    <button data-filter="projects">项目纪实</button>
+                    <button data-filter="historical">回忆</button>
+                    <button data-filter="video">视频</button>
+                </div>
+
+                <!-- 动态加载区域 -->
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- 本地静态内容 + API 内容都会渲染到这里 -->
+                </div>
+            </section>
+
+            <aside class="sidebar">
+                <section class="widget">
+                    <h4>分享活动瞬间</h4>
+                    <p>如果您有部门活动的珍贵照片或视频，欢迎联系管理员上传，让回忆更完整！</p>
+                    <a href="upload.html" class="button">上传照片</a>
+                </section>
+                <section class="widget">
+                    <h4>活动记录</h4>
+                    <ul>
+                        <li><a href="#">化学知识竞赛</a></li>
+                        <li><a href="#">荧光化学实验</a></li>
+                        <li><a href="#">……</a></li>
+                    </ul>
+                </section>
+            </aside>
+        </main>
+
+        <footer>
+            <p>© <span id="current-year"></span> 我们的部门. 共同记录，分享美好。</p>
+            <p>每一份回忆都由团队成员共同守护与珍藏。</p>
+        </footer>
+    </div>
+
+    <!-- 管理入口（固定右下角） -->
+    <a href="upload.html" class="admin-link">📷 上传</a>
+
+    <script src="js/script.js"></script>
+    <script src="js/snake-background.js"></script>
+    <script>
+        // ============================================
+        // API 配置
+        // ============================================
+        const API_BASE = 'https://club.jonyveso.workers.dev';
+
+        // ============================================
+        // 本地静态图片数据（方式A：保留现有图片）
+        // ============================================
+        const localPhotos = [
+            // 视频
+            { type: 'video', src: 'images/video/2024.mp4', title: '2024级纳新视频', category: 'video', caption: '2024级纳新视频' },
+            // 整点抽象的
+            { type: 'image', src: 'images/chouxiang/chou (1).jpg', title: '表情包 1', category: 'events', caption: '化院的汉子绝不认输' },
+            { type: 'image', src: 'images/chouxiang/chou (1).png', title: '表情包 2', category: 'events', caption: '做大做强,再创辉煌' },
+            { type: 'image', src: 'images/chouxiang/chou (2).jpg', title: '表情包 3', category: 'events', caption: '学习哪有不疯的' },
+            { type: 'image', src: 'images/chouxiang/chou (3).jpg', title: '表情包 4', category: 'events', caption: '嗯……对' },
+            { type: 'image', src: 'images/chouxiang/chou (4).jpg', title: '表情包 5', category: 'events', caption: '不是哥们' },
+            { type: 'image', src: 'images/chouxiang/chou (5).jpg', title: '表情包 6', category: 'events', caption: '读泥嵙读的' },
+            { type: 'image', src: 'images/chouxiang/2 (1).jpg', title: '表情包 7', category: 'events', caption: '身残志坚' },
+            { type: 'image', src: 'images/chouxiang/2 (2).jpg', title: '表情包 8', category: 'events', caption: '黄花大闺女' },
+            { type: 'image', src: 'images/chouxiang/2 (3).jpg', title: '表情包 9', category: 'events', caption: '冷酷' },
+            { type: 'image', src: 'images/chouxiang/2 (4).jpg', title: '表情包 10', category: 'events', caption: '那咋啦' },
+            { type: 'image', src: 'images/chouxiang/2 (5).jpg', title: '表情包 11', category: 'events', caption: '两小儿辩joker' },
+            { type: 'image', src: 'images/chouxiang/3 (1).jpg', title: '表情包 12', category: 'events', caption: '耳朵没看见' },
+            { type: 'image', src: 'images/chouxiang/3 (2).jpg', title: '表情包 13', category: 'events', caption: '讨厌~' },
+            { type: 'image', src: 'images/chouxiang/3 (3).jpg', title: '表情包 14', category: 'events', caption: '毁灭吧' },
+            // 项目纪实
+            { type: 'image', src: 'images/huodong/2 (1).jpg', title: '我来搞定变色油墨', category: 'projects', caption: '我来搞定变色油墨' },
+            { type: 'image', src: 'images/huodong/2 (2).jpg', title: '我来搞定无酸纸', category: 'projects', caption: '我来搞定无酸纸' },
+            { type: 'image', src: 'images/huodong/2 (3).jpg', title: '蓝色是忧郁的颜色', category: 'projects', caption: '蓝色是忧郁的颜色' },
+            { type: 'image', src: 'images/huodong/2 (4).jpg', title: 'pu签到', category: 'projects', caption: '学长，好巧啊' },
+            { type: 'image', src: 'images/huodong/2 (5).jpg', title: '回头望月', category: 'projects', caption: '不巧，我在等你' },
+            { type: 'image', src: 'images/huodong/2 (6).jpg', title: '知识竞答活动上唱"双簧"（主持）', category: 'projects', caption: '知识竞答活动上唱"双簧"（主持）' },
+            { type: 'image', src: 'images/huodong/2 (7).jpg', title: '某位不知名老登', category: 'projects', caption: '老毕登' },
+            { type: 'image', src: 'images/huodong/2 (8).jpg', title: '与民同乐', category: 'projects', caption: '与民同乐' },
+            { type: 'image', src: 'images/huodong/2 (9).jpg', title: '让我想起了化学实验课', category: 'projects', caption: '你们都逃不过的化学实验课😄' },
+            // 回忆
+            { type: 'image', src: 'images/hezhao/1 (1).jpg', title: '往昔回忆 1', category: 'historical', caption: '合照' },
+            { type: 'image', src: 'images/hezhao/1 (5).jpg', title: '往昔回忆 5', category: 'historical', caption: '合照' },
+            { type: 'image', src: 'images/hezhao/1 (6).jpg', title: '往昔回忆 6', category: 'historical', caption: '合照' },
+        ];
+
+        // ============================================
+        // 渲染本地图片
+        // ============================================
+        function renderLocalPhotos(filter = 'all') {
+            const filtered = filter === 'all' ? localPhotos : localPhotos.filter(p => p.category === filter);
+            
+            return filtered.map(photo => {
+                if (photo.type === 'video') {
+                    return `
+                        <div class="gallery-item" data-category="${photo.category}">
+                            <video preload="metadata" style="width:100%; cursor:pointer;" onclick="this.play()">
+                                <source src="${photo.src}#t=0.1" type="video/mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                            <div class="gallery-item-caption">${escapeHtml(photo.caption)}</div>
+                        </div>
+                    `;
+                } else {
+                    return `
+                        <div class="gallery-item" data-category="${photo.category}">
+                            <a href="${photo.src}" data-lightbox="gallery" data-title="${escapeHtml(photo.title)}">
+                                <img src="${photo.src}" alt="${escapeHtml(photo.title)}" loading="lazy">
+                            </a>
+                            <div class="gallery-item-caption">${escapeHtml(photo.caption)}</div>
+                        </div>
+                    `;
+                }
+            }).join('');
+        }
+
+        // ============================================
+        // 从 API 加载动态图片
+        // ============================================
+        async function loadApiPhotos(filter = 'all') {
+            try {
+                const url = new URL(`${API_BASE}/api/photos`);
+                if (filter !== 'all') {
+                    // API 分类名称和本地可能不同，这里按需映射
+                    const categoryMap = {
+                        'events': '整点抽象的',
+                        'projects': '项目纪实',
+                        'historical': '回忆',
+                        'video': '视频'
+                    };
+                    const apiCategory = categoryMap[filter];
+                    if (apiCategory) url.searchParams.set('category', apiCategory);
+                }
+                url.searchParams.set('limit', '100');
+
+                const res = await fetch(url);
+                if (!res.ok) throw new Error('API 加载失败');
+                
+                const data = await res.json();
+                return data.photos || [];
+            } catch (err) {
+                console.error('API 加载失败:', err);
+                return [];
+            }
+        }
+
+        // ============================================
+        // 渲染 API 图片
+        // ============================================
+        function renderApiPhotos(photos) {
+            if (photos.length === 0) return '';
+            
+            return photos.map(photo => {
+                const isVideo = photo.category === '视频' || photo.file_key.endsWith('.mp4');
+                
+                if (isVideo) {
+                    return `
+                        <div class="gallery-item" data-category="video">
+                            <video preload="metadata" style="width:100%; cursor:pointer;" onclick="this.play()">
+                                <source src="${API_BASE}${photo.url}" type="video/mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                            <div class="gallery-item-caption">${escapeHtml(photo.title)}</div>
+                        </div>
+                    `;
+                } else {
+                    return `
+                        <div class="gallery-item" data-category="${escapeHtml(mapCategoryBack(photo.category))}">
+                            <a href="${API_BASE}${photo.url}" data-lightbox="gallery" data-title="${escapeHtml(photo.title)}">
+                                <img src="${API_BASE}${photo.url}" alt="${escapeHtml(photo.title)}" loading="lazy">
+                            </a>
+                            <div class="gallery-item-caption">
+                                ${escapeHtml(photo.title)}
+                                ${photo.description ? `<br><small>${escapeHtml(photo.description)}</small>` : ''}
+                                <br><small style="color:#888">${escapeHtml(photo.uploaded_by || '匿名')} · ${formatDate(photo.uploaded_at)}</small>
+                            </div>
+                        </div>
+                    `;
+                }
+            }).join('');
+        }
+
+        // API 分类 → 本地 filter 映射
+        function mapCategoryBack(cat) {
+            const map = {
+                '整点抽象的': 'events',
+                '项目纪实': 'projects',
+                '回忆': 'historical',
+                '视频': 'video'
+            };
+            return map[cat] || 'events';
+        }
+
+        // ============================================
+        // 合并渲染
+        // ============================================
+        async function renderAll(filter = 'all') {
+            const grid = document.getElementById('gallery-grid');
+            grid.innerHTML = '<div class="loading">正在加载回忆...</div>';
+
+            // 本地图片
+            const localHtml = renderLocalPhotos(filter);
+            
+            // API 图片
+            const apiPhotos = await loadApiPhotos(filter);
+            const apiHtml = renderApiPhotos(apiPhotos);
+
+            // 合并显示
+            if (!localHtml && !apiHtml) {
+                grid.innerHTML = '<div class="empty">暂无照片，点击右下角上传第一张吧！</div>';
+            } else {
+                grid.innerHTML = localHtml + apiHtml;
+            }
+        }
+
+        // ============================================
+        // 分类筛选
+        // ============================================
+        document.addEventListener('DOMContentLoaded', () => {
+            renderAll('all');
+
+            const filterButtons = document.querySelectorAll('.gallery-filters button');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    const filter = button.getAttribute('data-filter');
+                    renderAll(filter);
+                });
+            });
+        });
+
+        // ============================================
+        // 工具函数
+        // ============================================
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function formatDate(iso) {
+            if (!iso) return '';
+            const d = new Date(iso);
+            return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+        }
+    </script>
+</body>
+</html>

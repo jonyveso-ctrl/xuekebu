@@ -1,0 +1,65 @@
+{
+	"head": {
+		"title": "technology",
+		"description": "Author:technology,Category:Personal Blog",
+		"favicon": "favicon.ico"
+	},
+	"intro": {
+		"title": "technology",
+		"subtitle": "Front back left right end engineer",
+		"enter": "enter",
+		"supportAuthor": false,
+		"background": true
+	},
+	"main": {
+		"name": "technology",
+		"signature": "team & Input & Output",
+		"avatar": {
+			"link": "assets/name.png",
+			"height": "100",
+			"width": "100"
+		},
+		"ul": {
+			"first": {
+				"href": "bok/index.html",
+				"icon": "bokeyuan",
+				"text": "Bok"
+			},
+			"second": {
+				"href": "bok/about.html",
+				"icon": "bokeyuan",
+				"text": "About"
+			},
+			"third": {
+				"href": "bok/gallery.html",
+				"icon": "bokeyuan",
+				"text": "Gallery"
+			},
+			"fourth": {
+				"href": "bok/milestone-detail.html",
+				"icon": "bokeyuan",
+				"text": "Milestone"
+			},
+			"fifth": {
+				"href": "bok/our-people.html",
+				"icon": "bokeyuan",
+				"text": "Our People"
+			},
+			"sixth": {
+				"href": "bok/post.html",
+				"icon": "bokeyuan",
+				"text": "Post"
+			},
+			"seventh": {
+				"href": "bok/resources.html",
+				"icon": "bokeyuan",
+				"text": "Resources"
+			},
+			"eighth": {
+				"href": "bok/timeline.html",
+				"icon": "bokeyuan",
+				"text": "Timeline"
+			}
+		}
+	}
+}

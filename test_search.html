@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>学术科技部</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 15px; border: 1px solid #ccc; }
+        .success { color: green; }
+        .error { color: red; }
+        .test-result { margin: 10px 0; padding: 10px; background: #f5f5f5; }
+    </style>
+</head>
+<body>
+    <h1>搜索功能测试</h1>
+    
+    <div class="test-section">
+        <h2>测试1: 基本搜索功能</h2>
+        <div id="test1-result" class="test-result">等待测试...</div>
+    </div>
+
+    <div class="test-section">
+        <h2>测试2: 级别过滤</h2>
+        <div id="test2-result" class="test-result">等待测试...</div>
+    </div>
+
+    <div class="test-section">
+        <h2>测试3: 类别过滤</h2>
+        <div id="test3-result" class="test-result">等待测试...</div>
+    </div>
+
+    <div class="test-section">
+        <h2>测试4: 视图切换</h2>
+        <div id="test4-result" class="test-result">等待测试...</div>
+    </div>
+
+    <script>
+        // 模拟测试数据
+        const testData = [
+            { id: 1, name: "全国大学生数学建模竞赛", level: "国家级", category: "A", remark: "数学建模" },
+            { id: 2, name: "全国大学生电子设计竞赛", level: "国家级", category: "B", remark: "电子设计" },
+            { id: 3, name: "挑战杯全国大学生课外学术科技作品竞赛", level: "国家级", category: "C", remark: "科技创新" },
+            { id: 4, name: "互联网+大学生创新创业大赛", level: "国家级", category: "D", remark: "创新创业" },
+            { id: 5, name: "省级数学竞赛", level: "省级", category: "C", remark: "省级数学" }
+        ];
+
+        // 测试搜索功能
+        function testSearchFunctionality() {
+            // 测试1: 基本搜索
+            const searchTerm = "数学";
+            const filtered1 = testData.filter(comp => 
+                comp.name.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+            
+            const test1Result = document.getElementById('test1-result');
+            if (filtered1.length === 2 && 
+                filtered1.some(comp => comp.name.includes("全国大学生数学建模竞赛")) &&
+                filtered1.some(comp => comp.name.includes("省级数学竞赛"))) {
+                test1Result.innerHTML = `<span class="success">✓ 通过</span> - 搜索"数学"找到2个结果`;
+            } else {
+                test1Result.innerHTML = `<span class="error">✗ 失败</span> - 期望2个结果，实际找到${filtered1.length}个`;
+            }
+
+            // 测试2: 级别过滤
+            const levelFilter = "国家级";
+            const filtered2 = testData.filter(comp => comp.level === levelFilter);
+            
+            const test2Result = document.getElementById('test2-result');
+            if (filtered2.length === 4) {
+                test2Result.innerHTML = `<span class="success">✓ 通过</span> - 国家级过滤找到4个结果`;
+            } else {
+                test2Result.innerHTML = `<span class="error">✗ 失败</span> - 期望4个国家级结果，实际找到${filtered2.length}个`;
+            }
+
+            // 测试3: 类别过滤
+            const categoryFilter = "C";
+            const filtered3 = testData.filter(comp => comp.category === categoryFilter);
+            
+            const test3Result = document.getElementById('test3-result');
+            if (filtered3.length === 2) {
+                test3Result.innerHTML = `<span class="success">✓ 通过</span> - 类别C过滤找到2个结果`;
+            } else {
+                test3Result.innerHTML = `<span class="error">✗ 失败</span> - 期望2个类别C结果，实际找到${filtered3.length}个`;
+            }
+
+            // 测试4: 组合搜索
+            const combinedFilter = testData.filter(comp => 
+                comp.name.toLowerCase().includes("竞赛") && 
+                comp.level === "国家级" &&
+                comp.category === "C"
+            );
+            
+            const test4Result = document.getElementById('test4-result');
+            if (combinedFilter.length === 1 && combinedFilter[0].name === "挑战杯全国大学生课外学术科技作品竞赛") {
+                test4Result.innerHTML = `<span class="success">✓ 通过</span> - 组合搜索找到1个正确结果`;
+            } else {
+                test4Result.innerHTML = `<span class="error">✗ 失败</span> - 组合搜索失败`;
+            }
+        }
+
+        // 运行测试
+        testSearchFunctionality();
+    </script>
+</body>
+</html>

@@ -1,0 +1,2144 @@
+[
+  {
+    "id": 1,
+    "name": "中国国际大学生创新大赛",
+    "category": "A",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 2,
+    "name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+    "category": "A",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 3,
+    "name": "“挑战杯”中国大学生创业计划大赛",
+    "category": "A",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 4,
+    "name": "全国大学生机器人大赛 -RoboMaster、RoboCon",
+    "category": "A",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 5,
+    "name": "ACM-ICPC国际大学生程序设计竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 6,
+    "name": "全国大学生数学建模竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 7,
+    "name": "全国大学生电子设计竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 8,
+    "name": "全国大学生机械创新设计大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 9,
+    "name": "全国大学生结构设计竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 10,
+    "name": "全国大学生广告艺术大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 11,
+    "name": "全国大学生智能汽车竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 12,
+    "name": "全国大学生电子商务 “创新、创意及创业”挑战赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 13,
+    "name": "中国大学生工程实践与创新能力大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 14,
+    "name": "全国大学生物流设计大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 15,
+    "name": "“外研社·国才杯”“理解当代中国”全国大学生外语能力大赛 -英语演讲、英语辩论、英语写作、英语阅读",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 16,
+    "name": "两岸新锐设计竞赛 ·华灿奖",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 17,
+    "name": "全国大学生创新创业训练计划年会展示",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 18,
+    "name": "全国大学生化工设计竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 19,
+    "name": "全国大学生市场调查与分析大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 20,
+    "name": "全国大学生先进成图技术与产品信息建模创新大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 21,
+    "name": "全国三维数字化创新设计大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 22,
+    "name": "“西门子杯”中国智能制造挑战赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 23,
+    "name": "中国大学生服务外包创新创业大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 24,
+    "name": "中国大学生计算机设计大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 25,
+    "name": "中国高校计算机大赛 -大数据挑战赛、团体程序设计天梯赛 、移动应用创新赛、网络技术挑战赛、人工智能创意赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 26,
+    "name": "蓝桥杯全国软件和信息技术专业人才大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 27,
+    "name": "米兰设计周--中国高校设计学科师生优秀作品展",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 28,
+    "name": "全国大学生地质技能竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 29,
+    "name": "全国大学生光电设计竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 30,
+    "name": "全国大学生集成电路创新创业大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 31,
+    "name": "全国大学生金相技能大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 32,
+    "name": "全国大学生信息安全竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 33,
+    "name": "未来设计师·全国高校数字艺术设计大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 34,
+    "name": "全国周培源大学生力学竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 35,
+    "name": "中国大学生机械工程创新创意大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 36,
+    "name": "中国机器人大赛暨 RoboCup机器人世界杯中国赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 37,
+    "name": "“中国软件杯”大学生软件设计大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 38,
+    "name": "中美青年创客大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 39,
+    "name": "睿抗机器人开发者大赛 （RAICON)",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 40,
+    "name": "“大唐杯”全国大学生新一代信息通信技术大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 41,
+    "name": "华为ICT大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 42,
+    "name": "全国大学生嵌入式芯片与系统设计竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 43,
+    "name": "全国大学生生命科学竞赛 (CULSC)",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 44,
+    "name": "全国大学生物理实验竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 45,
+    "name": "全国高校BIM毕业设计创新大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 46,
+    "name": "全国高校商业精英挑战赛 -品牌策划竞赛、会展专业创新创业实践竞赛、国际贸易竞赛、创新创业竞赛、会计与商业管理案例竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 47,
+    "name": "“学创杯”全国大学生创业综合模拟大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 48,
+    "name": "中国高校智能机器人创意大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 49,
+    "name": "中国好创意暨全国数字艺术设计大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 50,
+    "name": "中国机器人及人工智能大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 51,
+    "name": "全国大学生节能减排社会实践与科技竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 52,
+    "name": "“21世纪杯”全国英语演讲比赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 53,
+    "name": "iCAN 大学生创新创业大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 54,
+    "name": "“工行杯”全国大学生金融科技创新大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 55,
+    "name": "中华经典诵写讲大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 56,
+    "name": "“外教社杯”全国高校学生跨文化能力大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 57,
+    "name": "百度之星·程序设计大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 58,
+    "name": "全国大学生工业设计大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 59,
+    "name": "全国大学生水利创新设计大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 60,
+    "name": "全国大学生化工实验大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 61,
+    "name": "全国大学生化学实验创新设计大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 62,
+    "name": "全国大学生计算机系统能力大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 63,
+    "name": "全国大学生花园设计建造竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 64,
+    "name": "全国大学生物联网设计竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 65,
+    "name": "全国大学生信息安全与对抗技术竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 66,
+    "name": "全国大学生测绘学科创新创业智能大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 67,
+    "name": "全国大学生统计建模大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 68,
+    "name": "全国大学生能源经济学术创意大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 69,
+    "name": "全国大学生数字媒体科技作品及创意竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 70,
+    "name": "全国本科院校税收风险管控案例大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 71,
+    "name": "全国企业模拟竞赛大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 72,
+    "name": "全国高等院校数智化企业经营沙盘大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 73,
+    "name": "全国数字建筑创新应用大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 74,
+    "name": "全球校园人工智能算法精英大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 75,
+    "name": "国际大学生智能农业装备创新大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 76,
+    "name": "“科云杯”全国大学生财会职业能力大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 77,
+    "name": "“百校百题”应用型创新课题大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": "一院一赛"
+  },
+  {
+    "id": 78,
+    "name": "中国工业智能挑战赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": "一院一赛"
+  },
+  {
+    "id": 79,
+    "name": "全国大学生环境资源模拟法庭大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": "一院一赛"
+  },
+  {
+    "id": 80,
+    "name": "全国高等学校矿物加工工程专业学生实践作品大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": "一院一赛"
+  },
+  {
+    "id": 81,
+    "name": "全国高等学校人工环境学科奖",
+    "category": "B",
+    "level": "国家级",
+    "remark": "一院一赛"
+  },
+  {
+    "id": 82,
+    "name": "全国高等学校采矿工程专业学生实践作品大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": "一院一赛"
+  },
+  {
+    "id": 83,
+    "name": "中国高等院校设计作品大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": "一院一赛"
+  },
+  {
+    "id": 84,
+    "name": "全国大学生金融精英挑战赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": "一院一赛"
+  },
+  {
+    "id": 85,
+    "name": "中国工程机器人大赛暨国际公开赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": "一院一赛"
+  },
+  {
+    "id": 86,
+    "name": "中国大学生高分子材料创新创业大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": "一院一赛"
+  },
+  {
+    "id": 87,
+    "name": "全国海洋航行器设计与制作大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": "一院一赛"
+  },
+  {
+    "id": 88,
+    "name": "全国高等学校安全科学与工程大学生实践与创新作品大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": "一院一赛"
+  },
+  {
+    "id": 89,
+    "name": "易智瑞杯中国大学生 GIS软件开发竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": "一院一赛"
+  },
+  {
+    "id": 90,
+    "name": "全国大学生“创新杯”地球物理知识竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": "一院一赛"
+  },
+  {
+    "id": 91,
+    "name": "全国大学生数学竞赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": "一院一赛"
+  },
+  {
+    "id": 92,
+    "name": "全国应用型人才综合技能大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": "一院一赛"
+  },
+  {
+    "id": 93,
+    "name": "全国大学生电子设计竞赛模拟电子系统设计专题邀请赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": "一院一赛"
+  },
+  {
+    "id": 94,
+    "name": "全国高校大学生讲思政课公开课展示活动",
+    "category": "B",
+    "level": "国家级",
+    "remark": "一院一赛"
+  },
+  {
+    "id": 95,
+    "name": "“外教社・词达人杯”全国大学生英语词汇能力大赛",
+    "category": "B",
+    "level": "国家级",
+    "remark": "一院一赛"
+  },
+  {
+    "id": 96,
+    "name": "全国大学生智能互联创新大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 97,
+    "name": "中国研究生未来飞行器创新大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 98,
+    "name": "全国大学生“互联网+”创新大赛暨全国大学生互联网软件设计大奖赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 99,
+    "name": "全国高等学校测绘学科大学生科技创新论文征文大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 100,
+    "name": "全国声乐领军人才培养计划暨全国声乐展演",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 101,
+    "name": "全国大学生版权征文大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 102,
+    "name": "全国大学生化学实验邀请赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 103,
+    "name": "全国大学生煤炭地学大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 104,
+    "name": "全国大学生物流仿真设计大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 105,
+    "name": "全国大学生岩土工程竞赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 106,
+    "name": "全国美术作品展览",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 107,
+    "name": "全国青少年民族器乐教育教学成果展示活动",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 108,
+    "name": "全国青少年模拟政协提案大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 109,
+    "name": "全国学生“学宪法 讲宪法”活动",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 110,
+    "name": "夏衍杯优秀电影剧本征集",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 111,
+    "name": "中国人居环境设计学年奖",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 112,
+    "name": "中国研究生机器人创新设计大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 113,
+    "name": "中国研究生能源装备创新设计大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 114,
+    "name": "中国研究生数学建模竞赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 115,
+    "name": "全国大学生自动化系统应用大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 116,
+    "name": "全国研究生移动终端应用设计创新大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 117,
+    "name": "大学生科技资源共享服务创新大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 118,
+    "name": "全国大学生可持续建筑设计竞赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 119,
+    "name": "中国大学生智能设计竞赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 120,
+    "name": "中国研究生电子设计竞赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 121,
+    "name": "全国大学生物联网创新应用设计大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 122,
+    "name": "高校自动化设计大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 123,
+    "name": "《中国建筑教育》·“清润奖”大学生论文竞赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 124,
+    "name": "CAR-ASHRAE学生设计竞赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 125,
+    "name": "城乡社会综合实践调研报告课程作业评选",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 126,
+    "name": "德国威斯巴登国际钢琴比赛亚太赛区",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 127,
+    "name": "海峡两岸大学生国际贸易与商务专题竞赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 128,
+    "name": "全国“互联网+”快递大学生创新创业大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 129,
+    "name": "全国大学生“用友新道杯”会计信息化技能大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 130,
+    "name": "全国大学生FPGA创新设计邀请赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 131,
+    "name": "全国大中学生海洋文化创意设计大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 132,
+    "name": "全国法律专业学位研究生法律文书写作大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 133,
+    "name": "全国高等学校大学生测绘技能大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 134,
+    "name": "全国高等学校建筑与环境设计专业学生美术作品大奖赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 135,
+    "name": "全国高校GIS技能大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 136,
+    "name": "全国高校地理科学展示大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 137,
+    "name": "全国高校无机非金属材料基础知识大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 138,
+    "name": "全国青年科普创新实验暨作品大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 139,
+    "name": "全国虚拟仪器大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 140,
+    "name": "全国中、高等院校建筑信息模型 （BIM）应用技能大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 141,
+    "name": "新加坡中新国际音乐比赛中国赛区选拔赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 142,
+    "name": "信息安全铁人三项赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 143,
+    "name": "中国高等学校城乡规划教育年会城市设计课程作业评选",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 144,
+    "name": "中国石油工程设计大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 145,
+    "name": "中国研究生公共管理案例大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 146,
+    "name": "中国研究生石油装备创新设计大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 147,
+    "name": "中国大学生程序设计竞赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 148,
+    "name": "教育部工业工程教指委优秀课程设计展示活动",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 149,
+    "name": "国际海洋工程装备科技创新大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 150,
+    "name": "国际环保公益设计大赛",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 151,
+    "name": "全国高校大学生微电影展示活动",
+    "category": "C",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 152,
+    "name": "全国大学生交通运输科技大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 153,
+    "name": "OCALE全国跨境电商创新创业能力大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": "分为春季赛、秋季赛"
+  },
+  {
+    "id": 154,
+    "name": "Philip C. Jessup国际法模拟法庭辩论赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 155,
+    "name": "中国室内设计大奖赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 156,
+    "name": "中国手绘艺术设计大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 157,
+    "name": "紫金奖·建筑与环境设计大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 158,
+    "name": "时报金犊奖",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 159,
+    "name": "全国高校移动互联网应用开发创新大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 160,
+    "name": "全国失效分析大奖赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 161,
+    "name": "“中国策”大学生营销策划大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 162,
+    "name": "全国校园财会大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 163,
+    "name": "SAIL青少年科技创新大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 164,
+    "name": "全国并行应用挑战赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 165,
+    "name": "POCIB全国大学生外贸从业能力大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 166,
+    "name": "全国高等院校秘书专业知识技能大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 167,
+    "name": "“东风日产杯”清华IE亮剑全国工业工程应用案例大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 168,
+    "name": "“三菱电机杯”全国大学生电气与自动化大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 169,
+    "name": "“为中国而设计”环境艺术设计大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 170,
+    "name": "“中国电机工程学会杯 ”全国大学生电工数学建模竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 171,
+    "name": "韩素音青年翻译奖竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 172,
+    "name": "汉语桥·全球外国人汉语大会",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 173,
+    "name": "全国大学生GIS应用技能大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 174,
+    "name": "全国大学生网络商务创新应用大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 175,
+    "name": "全国高校大学生金相大赛暨全国高校大学生材料综合技能大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 176,
+    "name": "全国高校商业精英挑战赛 -商业信息化创新创业竞赛 、财会职业能力竞赛、国际经贸与商务专题 、跨境电子商务创新实践竞赛 、流通业经",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 177,
+    "name": "全国高校智能交通创新与创业大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 178,
+    "name": "中国大学生广告艺术节学院奖",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 179,
+    "name": "“SuperMap杯”全国高校GIS大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 180,
+    "name": "“创青春”中国青年公益创意大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 181,
+    "name": "“敦煌杯”中国二胡（琵琶、古筝）演奏比赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 182,
+    "name": "“敦煌杯”中国民族室内乐、重奏比赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 183,
+    "name": "“国青杯”全国高校艺术设计大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 184,
+    "name": "“龙岩杯”海峡两岸大学生企业经营创意竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 185,
+    "name": "国际太阳能建筑设计竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 186,
+    "name": "全国数据挖掘挑战赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 187,
+    "name": "“网中网杯”大学生财务决策大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 188,
+    "name": "“中金杯”金融知识大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 189,
+    "name": "全国大学生环境设计大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 190,
+    "name": "CCF大学生计算机系统与程序设计竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 191,
+    "name": "IADA国际艺术设计大赛 （互艺奖）",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 192,
+    "name": "MathorCup大学生数学建模挑战赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 193,
+    "name": "艾景奖国际园林景观规划设计大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 194,
+    "name": "城市交通出行创新实践竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 195,
+    "name": "发展中国家建筑设计大展暨国际学生设计竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 196,
+    "name": "红点奖",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 197,
+    "name": "孔雀奖全国高等艺术院校声乐大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 198,
+    "name": "清华大学中国公共政策案例分析大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 199,
+    "name": "全国大学生创新会计人才技能大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 200,
+    "name": "全国大学生房地产营销策划大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 201,
+    "name": "全国大学生加筋土挡墙设计大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 202,
+    "name": "全国大学生建筑设计方案竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 203,
+    "name": "全国大学生人力资源管理知识技能竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 204,
+    "name": "全国大学生沙盘模拟经营大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 205,
+    "name": "全国大学生石油科技创新创业大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 206,
+    "name": "全国大学生英语竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 207,
+    "name": "全国大学生油气地质大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 208,
+    "name": "全国大学生语言文字能力大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 209,
+    "name": "全国大学生铸造工艺设计大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 210,
+    "name": "全国高等院校外贸单证岗位技能大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 211,
+    "name": "全国高等院校项目管理大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 212,
+    "name": "全国高校城市地下空间工程专业大学生模型设计竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 213,
+    "name": "全国高校市场营销大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 214,
+    "name": "全国公共管理案例分析大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 215,
+    "name": "全国口译大赛（英语）",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 216,
+    "name": "全国商务秘书职业技能大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 217,
+    "name": "全国移动互联创新大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 218,
+    "name": "全国应用型本科会计技能竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 219,
+    "name": "世界大学生超级计算机竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 220,
+    "name": "世界大学生桥梁设计大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 221,
+    "name": "新人杯-全国大学生室内设计竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 222,
+    "name": "中国包装创意设计大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 223,
+    "name": "中国创新设计红星奖",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 224,
+    "name": "中国大学生公共关系策划创业大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 225,
+    "name": "中国风景园林学会大学生设计竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 226,
+    "name": "中国空间艺术构造大展",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 227,
+    "name": "中国智能仪器仪表设计大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 228,
+    "name": "国际大学生工程力学竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 229,
+    "name": "KJC亚洲国际艺术大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 230,
+    "name": "“园冶杯”大学生国际竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 231,
+    "name": "高校未来汽车人机交互设计大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 232,
+    "name": "全国高校经济决策虚仿实验大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 233,
+    "name": "国际先进机器人及仿真技术大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 234,
+    "name": "中国可再生能源学会大学生优秀科技作品竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 235,
+    "name": "中国高校计算机大赛 --微信小程序应用开发赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 236,
+    "name": "日日顺创客训练营",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 237,
+    "name": "全国公共管理案例大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 238,
+    "name": "全国高校BIM应用毕业设计大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 239,
+    "name": "印迹乡村创意设计大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 240,
+    "name": "中国研究生“双碳”创新与创意大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 241,
+    "name": "美国大学生数学建模竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 242,
+    "name": "MathorCup高校数学建模挑战赛 —大数据竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 243,
+    "name": "全国研究生金相实验分析大赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 244,
+    "name": "国际海洋法模拟法庭竞赛",
+    "category": "D",
+    "level": "国家级",
+    "remark": ""
+  },
+  {
+    "id": 245,
+    "name": "山东省大学生交通科技大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 246,
+    "name": "山东省大学生工业设计大赛暨齐鲁工业设计大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 247,
+    "name": "山东省大学生数学竞赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 248,
+    "name": "山东省大学生无人机大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 249,
+    "name": "山东省大学生移动互联创新创业大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 250,
+    "name": "山东省大学生与研究生物理教学技能大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 251,
+    "name": "山东省大学生智能技术应用设计大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 252,
+    "name": "山东省大学生“数字+”创新创业大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 253,
+    "name": "山东省大学生数字媒体创意大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 254,
+    "name": "山东省大学生单片机应用创新设计大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 255,
+    "name": "山东省环境艺术创新创意设计大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 256,
+    "name": "山东省“学院创意杯”和“泰山杯”广告作品大赛暨教育公益广告作品评选活动",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 257,
+    "name": "\"爱我国防\"山东省大学生主题演讲大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 258,
+    "name": "山东省“省长杯”工业设计大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 259,
+    "name": "山东省“学宪法 讲宪法”知识竞赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 260,
+    "name": "山东省“学宪法 讲宪法”主题演讲比赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 261,
+    "name": "山东省大学生测量技能大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 262,
+    "name": "山东省大学生创业计划大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 263,
+    "name": "山东省大学生高分子实用技术大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 264,
+    "name": "山东省大学生合唱艺术节",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 265,
+    "name": "山东省大学生化学实验技能大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 266,
+    "name": "山东省大学生机电产品创新设计竞赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 267,
+    "name": "山东省大学生校园最美歌声大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 268,
+    "name": "山东省大学生智能制造大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 269,
+    "name": "山东省高等学校大学生模拟法庭比赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 270,
+    "name": "山东省高校机器人大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 271,
+    "name": "山东省高校美术与设计专业师生基本功比赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 272,
+    "name": "山东省高校音乐舞蹈专业师生基本功比赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 273,
+    "name": "山东省环境艺术设计大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 274,
+    "name": "山东省物理科技创新大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 275,
+    "name": "山东省新一代信息技术创新应用大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 276,
+    "name": "山东省ACM大学生程序设计竞赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 277,
+    "name": "山东省大学生物联网创造力大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 278,
+    "name": "山东省大学生创客大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 279,
+    "name": "北京市大学生建筑结构设计竞赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 280,
+    "name": "齐鲁大学生创业计划竞赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 281,
+    "name": "全省大学生会计税务技能大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 282,
+    "name": "山东省·和歌山高校日语演讲大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 283,
+    "name": "山东省大学生电子与信息技术应用大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 284,
+    "name": "山东省大学生化工过程实验技能竞赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 285,
+    "name": "山东省大学生环保创意大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 286,
+    "name": "山东省大学生机器人大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 287,
+    "name": "山东省大学生软件设计大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 288,
+    "name": "山东省大学生生物化学实验技能大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 289,
+    "name": "山东省大学生网络安全技能大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 290,
+    "name": "山东省大学生物理竞赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 291,
+    "name": "山东省大学生艺术展演活动",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 292,
+    "name": "山东省单片机应用设计大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 293,
+    "name": "山东省智能技术应用设计大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 294,
+    "name": "山东新动能·软件创新创业大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 295,
+    "name": "山西文化创意设计大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 296,
+    "name": "山东省大学生智慧企业管理创新设计大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 297,
+    "name": "山东省大学生生物学大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 298,
+    "name": "山东省大学生科技节 -科技翻译大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 299,
+    "name": "山东省大学生科技节 -科技外语大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 300,
+    "name": "泰山设计杯文化创意设计大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 301,
+    "name": "山东省大学生科技节 -山东省大学生建造设计大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 302,
+    "name": "山东省大学生节能减排社会实践与科技竞赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 303,
+    "name": "山东省大学生光电竞赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 304,
+    "name": "山东省大学生光电设计科技创新大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 305,
+    "name": "山东省大学生地球物理新进展竞赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  },
+  {
+    "id": 306,
+    "name": "山东省大学生人工智能大赛暨智能装备设计大赛",
+    "category": "C",
+    "level": "省级",
+    "remark": ""
+  }
+]

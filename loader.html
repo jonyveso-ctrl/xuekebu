@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学术科技部</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="loader.css">
+    <link rel="preload" href="14.png" as="image"> <!-- 预加载背景图片 -->
+</head>
+<body>
+    <div class="loader-container">
+        <div class="ripple"></div>
+        <div class="ripple"></div>
+        <div class="ripple"></div>
+        <svg class="square square1" viewBox="0 0 104 104">
+            <path d="M2,52 a50,50 0 1,1 100,0 a50,50 0 1,1 -100,0" transform="translate(2, 2)"/>
+        </svg>
+        <svg class="square square2" viewBox="0 0 104 104">
+            <path d="M2,52 a50,50 0 1,1 100,0 a50,50 0 1,1 -100,0" transform="translate(2, 2)"/>
+        </svg>
+        <div class="percentage" id="percentage">0%</div>
+        <div class="poetry-container">
+            <div class="poetry-line-wrapper">
+                <span class="ink-splash start"></span>
+                <p id="poetry-quote" class="poetry-line"></p>
+                <span class="ink-splash end"></span>
+            </div>
+            <p id="poetry-author" class="poetry-info"></p>
+            <p id="poetry-title" class="poetry-info"></p>
+        </div>
+    </div>
+    <script src="loader.js"></script>
+</body>
+</html>

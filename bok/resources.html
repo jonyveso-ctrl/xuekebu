@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学术科技部</title>
+    <link rel="stylesheet" href="css/linear-style.css">
+    <style>
+        body, html {
+            font-family: '楷体', '楷体_GB2312', 'KaiTi', 'STKaiti', 'Noto Serif SC', serif !important;
+        }
+        button, .cta-button, a.button {
+            font-family: inherit;
+            background: #1976d2;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 20px;
+            margin: 4px 0;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover, .cta-button:hover, a.button:hover {
+            background: #1565c0;
+        }
+
+        /* New styles for search and filter */
+        .search-filter-container {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #2c3e50; /* Dark background for the search area */
+            border-radius: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+        }
+        .search-filter-container input[type="text"] {
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            min-width: 200px;
+        }
+        .search-filter-container .filters {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .search-filter-container label {
+            color: #ecf0f1;
+            font-size: 0.95rem;
+        }
+        .search-filter-container select {
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            cursor: pointer;
+        }
+        .search-filter-container .results-info {
+            color: #ecf0f1;
+            font-size: 0.95rem;
+            margin-left: auto; /* Push to the right */
+        }
+        .resource-item { /* Existing style for cards */
+            background-color: #34495e;
+            color: #ecf0f1;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .resource-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+        .resource-item h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .resource-item h3 a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .resource-item h3 a:hover {
+            text-decoration: underline;
+        }
+        .resource-item p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #bdc3c7;
+        }
+        /* Style for the results container */
+        #resultsContainer {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .search-filter-container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .search-filter-container .filters {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .search-filter-container .results-info {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+
+        /* New styles for tree view */
+        .tree-view-container {
+            background-color: #2c3e50; /* Dark background for the tree view area */
+            border-radius: 8px;
+            padding: 15px;
+            color: #ecf0f1;
+            margin-bottom: 20px;
+        }
+
+        .tree-node {
+            margin-left: 0px; /* Base indentation */
+            line-height: 1.8;
+        }
+
+        .tree-node.level-1 {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 5px;
+        }
+
+        .tree-node.level-2 {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-left: 20px; /* Indent level 2 */
+            margin-top: 5px;
+            margin-bottom: 3px;
+        }
+
+        .tree-node.level-3 {
+            font-size: 0.95rem;
+            margin-left: 40px; /* Indent level 3 */
+            color: #bdc3c7;
+        }
+
+        .tree-toggle {
+            cursor: pointer;
+            display: inline-block;
+            width: 1em; /* Ensure consistent spacing */
+            text-align: center;
+            margin-right: 5px;
+            transition: transform 0.2s;
+        }
+
+        .tree-toggle.expanded {
+            transform: rotate(90deg);
+        }
+
+        .tree-content {
+            display: none; /* Hidden by default */
+            padding-left: 10px; /* Further indent content */
+        }
+
+        .tree-node-header {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .tree-node-header:hover {
+            color: #3498db; /* Highlight on hover */
+        }
+    </style>
+</head>
+<body>
+    <canvas id="snake-bg-canvas"></canvas>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1><a href="index.html">学术科技部</a></h1>
+                <p>记录我们的欢笑与成长</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首阙</a></li>
+                    <li><a href="timeline.html">岁笺</a></li>
+                    <li><a href="gallery.html">画棠集</a></li>
+                    <li><a href="our-people.html">同袍录</a></li>
+                    <li><a href="resources.html">藏珠阁</a></li>
+                    <li><a href="about.html">素履志</a></li>
+                    <li><a href="message-board.html">鸿笺驿</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-label="切换主题">浅色模式</button>
+        </header>
+
+        <main>
+            <section class="content-area">
+                <div class="page-header">
+                    <h1 class="page-title"></h1>
+                    <p class="page-subtitle">校团委关于学生科技创新竞赛类别等级认定名单（2024版）
+                        ---如有更新以最新文件为主
+                    </p>
+                </div>
+                
+                <!-- New Search and Filter UI -->
+                <div class="search-filter-container">
+                    <input type="text" id="searchInput" placeholder="输入竞赛名称进行搜索...">
+                    <button id="searchButton">搜索</button>
+                    <div class="filters">
+                        <label for="levelFilter">级别:</label>
+                        <select id="levelFilter">
+                            <option value="">全部级别</option>
+                            <option value="国家级">国家级</option>
+                            <option value="省级">省级</option>
+                        </select>
+
+                        <label for="categoryFilter">类别:</label>
+                        <select id="categoryFilter" disabled> <!-- Initially disabled -->
+                            <option value="">全部类别</option>
+                            <!-- Categories will be populated by JS -->
+                        </select>
+                    </div>
+                    <div class="results-info">
+                        <p>共找到 <span id="resultCount">0</span> 项竞赛</p>
+                    </div>
+                </div>
+                
+                <!-- New: Container for Tree View -->
+                <div id="treeViewContainer" class="tree-view-container">
+                    <!-- Tree view content will be rendered here by JavaScript -->
+                </div>
+                
+                <!-- Results will be rendered here -->
+                <div id="resultsContainer" class="resource-list">
+                    <!-- Competition cards will be rendered here by JavaScript -->
+                </div>
+                
+                <!-- Message for no results -->
+                <div id="noResultsMessage" style="display: none; text-align: center; margin-top: 20px; color: #ecf0f1;">
+                    暂无匹配竞赛
+                </div>
+            </section>
+
+            <aside class="sidebar">
+                <section class="widget">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="https://www.cnki.net" target="_blank" rel="noopener noreferrer">中国知网 (CNKI)</a></li>
+                        <li><a href="https://www.wanfangdata.com.cn" target="_blank" rel="noopener noreferrer">万方数据</a></li>
+                        <li><a href="http://www.cqvip.com" target="_blank" rel="noopener noreferrer">维普资讯</a></li>
+                    </ul>
+                    <p style="font-size: 0.85em; color: #bdc3c7;">务必通过大学的图书馆网站链接进入，才能享受免费下载权限。</p>
+                </section>
+                <section class="widget">
+                    <h4>关于本站</h4>
+                    <p>本网站为记录学科的故事</p>
+                </section>
+                <section class="widget">
+                    <h4>主题与关键词</h4>
+                    <div class="themes-keywords">
+                        <a href="#">创新</a> <a href="#">研究</a> <a href="#">团队合作</a>
+                        <a href="#">论文</a> <a href="#">学术资源</a> <a href="#">开源</a>
+                        <a href="#">技术</a> <a href="#">知识共享</a>
+                    </div>
+                </section>
+            </aside>
+        </main>
+
+        <footer>
+            <p>© <span id="current-year"></span> 学术科技部. 保留所有权利。</p>
+            <p>由我们部门的奉献精神驱动。</p>
+        </footer>
+    </div>
+
+    <!-- Link to the new JavaScript file -->
+    <script src="js/resources.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/snake-background.js"></script>
+</body>
+</html>

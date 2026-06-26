@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学术科技部</title>
+    <link rel="stylesheet" href="css/linear-style.css">
+    <style>
+        body, html {
+            font-family: '楷体', '楷体_GB2312', 'KaiTi', 'STKaiti', 'Noto Serif SC', serif !important;
+        }
+        button, .cta-button, a.button {
+            font-family: inherit;
+            background: #1976d2;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 20px;
+            margin: 4px 0;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover, .cta-button:hover, a.button:hover {
+            background: #1565c0;
+        }
+        #team-network {
+            position: relative;
+            z-index: 1; /* 确保SVG在伪元素之上 */
+        }
+        #team-network::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('images/1.jpeg'), url('images/2.jpeg');
+            background-position: left center, right center;
+            background-repeat: no-repeat, no-repeat;
+            background-size: 50% 100%, 50% 100%;
+            opacity: 0.5;
+            z-index: -1; /* 将背景置于最底层 */
+        }
+    </style>
+</head>
+<body>
+    <canvas id="snake-bg-canvas"></canvas>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1><a href="index.html">学术科技部</a></h1>
+                <p>记录我们的欢笑与成长</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首阙</a></li>
+                    <li><a href="timeline.html">岁笺</a></li>
+                    <li><a href="gallery.html">画棠集</a></li>
+                    <li><a href="our-people.html">同袍录</a></li>
+                    <li><a href="resources.html">藏珠阁</a></li>
+                    <li><a href="about.html">素履志</a></li>
+                    <li><a href="message-board.html">鸿笺驿</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-label="切换主题">浅色模式</button>
+        </header>
+
+        <main>
+            <section class="content-area">
+                <div class="page-header">
+                    <h1 class="page-title"></h1>
+                    <p class="page-subtitle">2024届部门成员关系网</p>
+                </div>
+                <div id="team-network"
+                     data-leader="正部长-大美女"
+                     data-vice="副部长-大美女"
+                     data-members="彭于晏,彭于晏,彭于晏,彭于晏,彭于晏,彭于晏,彭于晏,彭于晏,刘亦菲,刘亦菲,刘亦菲,刘亦菲,刘亦菲">
+                </div>
+            </section>
+
+            <aside class="sidebar">
+                <section class="widget">
+                    <h4>加入我们</h4>
+                    <p>有兴趣成为我们创新团队的一员吗？<a href="#156">你一定可以哒！！！</a></p>
+                </section>
+                 <section class="widget">
+                    <h4>部门网络</h4>
+                    <p>遇见优秀的学长学姐。<a href="about.html">了解更多</a></p>
+                </section>
+            </aside>
+        </main>
+
+        <footer>
+            <p>© <span id="current-year"></span> 我们的部门. 共同记录，分享美好。</p>
+            <p>每一份回忆都由团队成员共同守护与珍藏。</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/snake-background.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.content.content-main
+	#card
+		.card-inner.fade
+			header
+				img(src=`${main.avatar.link}` width=`${main.avatar.width}` height=`${main.avatar.height}` alt="avatar")
+				h1(data-translate="name") #{main.name}
+				h2#signature(data-translate="signature") #{main.signature}
+
+			ul
+				each item in main.ul
+					li
+						a(href=`${item.href}` aria-label=`${item.text}` target="_blank")
+							i(class=`icon icon-${item.icon}`)
+							span(data-translate=`${item.text}`) #{item.text}
+
+	canvas.grid-background#gridCanvas

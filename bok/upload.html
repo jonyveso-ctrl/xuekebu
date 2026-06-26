@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上传照片 - 学术科技部</title>
+    <link rel="stylesheet" href="css/linear-style.css">
+    <style>
+        body, html {
+            font-family: '楷体', '楷体_GB2312', 'KaiTi', 'STKaiti', 'Noto Serif SC', serif !important;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 6px; font-weight: bold; }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #444;
+            border-radius: 6px;
+            background: #1a1a2e;
+            color: #fff;
+            font-family: inherit;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        button[type="submit"] {
+            background: #1976d2;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 12px 32px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            width: 100%;
+        }
+        button[type="submit"]:hover { background: #1565c0; }
+        button[type="submit"]:disabled { background: #555; cursor: not-allowed; }
+        .preview {
+            max-width: 100%;
+            max-height: 300px;
+            margin-top: 10px;
+            border-radius: 8px;
+            display: none;
+        }
+        .message {
+            padding: 14px;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: none;
+            text-align: center;
+        }
+        .message.success { background: #1b5e20; color: #fff; display: block; }
+        .message.error { background: #b71c1c; color: #fff; display: block; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #64b5f6;
+            text-decoration: none;
+        }
+        .back-link:hover { text-decoration: underline; }
+        h2 { text-align: center; margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+    <a href="gallery.html" class="back-link">← 返回画棠集</a>
+    <h2>📷 上传活动照片</h2>
+
+    <form id="uploadForm">
+        <div class="form-group">
+            <label>上传密码 *</label>
+            <input type="password" name="password" required placeholder="请输入管理员密码">
+        </div>
+
+        <div class="form-group">
+            <label>选择照片/视频 *</label>
+            <input type="file" name="file" accept="image/*,video/mp4" required onchange="previewFile(this)">
+            <img id="preview" class="preview">
+            <video id="videoPreview" class="preview" controls style="display:none;"></video>
+        </div>
+
+        <div class="form-group">
+            <label>标题 *</label>
+            <input type="text" name="title" required placeholder="例如：2024级纳新视频">
+        </div>
+
+        <div class="form-group">
+            <label>分类 *</label>
+            <select name="category" required>
+                <option value="整点抽象的">整点抽象的</option>
+                <option value="项目纪实">项目纪实</option>
+                <option value="回忆">回忆</option>
+                <option value="视频">视频</option>
+                <option value="其他">其他</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>描述（可选）</label>
+            <textarea name="description" rows="3" placeholder="照片背后的故事..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>上传者（可选）</label>
+            <input type="text" name="uploaded_by" placeholder="你的名字或昵称">
+        </div>
+
+        <button type="submit" id="submitBtn">上传</button>
+        <div id="message" class="message"></div>
+    </form>
+
+    <script>
+        const API_BASE = 'https://club.jonyveso.workers.dev';
+
+        function previewFile(input) {
+            const file = input.files[0];
+            if (!file) return;
+
+            const imgPreview = document.getElementById('preview');
+            const videoPreview = document.getElementById('videoPreview');
+
+            if (file.type.startsWith('video/')) {
+                imgPreview.style.display = 'none';
+                videoPreview.style.display = 'block';
+                videoPreview.src = URL.createObjectURL(file);
+            } else {
+                videoPreview.style.display = 'none';
+                imgPreview.style.display = 'block';
+                imgPreview.src = URL.createObjectURL(file);
+            }
+        }
+
+        document.getElementById('uploadForm').onsubmit = async (e) => {
+            e.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            const msg = document.getElementById('message');
+
+            btn.disabled = true;
+            btn.textContent = '上传中...';
+            msg.className = 'message';
+            msg.style.display = 'none';
+
+            const formData = new FormData(e.target);
+
+            try {
+                const res = await fetch(`${API_BASE}/api/upload`, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await res.json();
+
+                if (data.success) {
+                    msg.className = 'message success';
+                    msg.textContent = '✅ 上传成功！';
+                    e.target.reset();
+                    document.getElementById('preview').style.display = 'none';
+                    document.getElementById('videoPreview').style.display = 'none';
+                } else {
+                    throw new Error(data.error || '上传失败');
+                }
+            } catch (err) {
+                msg.className = 'message error';
+                msg.textContent = '❌ ' + err.message;
+            } finally {
+                btn.disabled = false;
+                btn.textContent = '上传';
+            }
+        };
+    </script>
+</body>
+</html>

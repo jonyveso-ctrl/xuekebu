@@ -1,0 +1,218 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-color: #1a1a1a; /* 添加备用背景色 */
+    background-image: url('14.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+.loader-container {
+    position: relative;
+    width: 500px; /* 增加宽度以容纳最长的单行诗句 */
+    height: 200px; /* 增加高度以容纳诗句 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    fill: none;
+    stroke: white;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-dasharray: 280;
+    stroke-dashoffset: 70;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.square1 {
+    animation-name: rotate-sketch1;
+}
+
+.square2 {
+    animation-name: rotate-sketch2;
+    animation-delay: -2.5s;
+}
+
+@keyframes rotate-sketch1 {
+    0% {
+        transform: rotate(0deg);
+        stroke-dashoffset: 70;
+    }
+    50% {
+        stroke-dashoffset: 280;
+    }
+    100% {
+        transform: rotate(360deg);
+        stroke-dashoffset: 70;
+    }
+}
+
+@keyframes rotate-sketch2 {
+    0% {
+        transform: rotate(45deg);
+        stroke-dashoffset: 70;
+    }
+    50% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        transform: rotate(405deg);
+        stroke-dashoffset: 70;
+    }
+}
+
+.poetry-container {
+    position: absolute;
+    bottom: -80px; /* 调整位置以容纳三行 */
+    width: 100%;
+    text-align: center;
+    color: gray;
+    font-family: 'ZCOOL KuaiLe', cursive; /* 使用水墨感字体 */
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.poetry-line-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.poetry-line {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease-out forwards;
+    white-space: nowrap; /* 强制诗句在同一行显示 */
+}
+
+.poetry-info {
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease-out forwards;
+    margin: 2px 0;
+}
+
+#poetry-author {
+    animation-delay: 1s; /* 作者延迟出现 */
+}
+
+#poetry-title {
+    animation-delay: 1.5s; /* 题目延迟出现 */
+}
+
+.ink-splash {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    animation: inkSpread 1s ease-out forwards;
+}
+
+.ink-splash {
+    animation-delay: 0.5s;
+}
+
+.ink-splash::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: inkSpread 1s ease-out forwards;
+    animation-delay: inherit;
+}
+
+.ink-splash.end::before {
+    animation-delay: calc(inherit + 0.2s);
+}
+
+@keyframes inkSpread {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.percentage {
+    position: absolute;
+    color: black; /* Changed to black */
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    z-index: 10;
+}
+
+.ripple {
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: ripple-effect 2s linear infinite;
+    opacity: 0;
+}
+
+.ripple:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.ripple:nth-child(3) {
+    animation-delay: 1.2s;
+}
+
+@keyframes ripple-effect {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.loader-container.fade-out {
+    animation: fadeOut 1s ease-out forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
